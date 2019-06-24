@@ -1,0 +1,19 @@
+# Lesson 10
+
+## Introduction:
+
+---
+
+## Components List:
+
+---
+### Hardware:
+- 1 x Queen block
+- 1 x MicroB USB Cable
+- 2 x Lightbar 
+
+--- 
+
+###  Details for the code:
+
+---

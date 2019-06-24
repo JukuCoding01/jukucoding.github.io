@@ -1,0 +1,18 @@
+
+# More Games For You!
+
+We created some more games for you to learn and play! Find the games you want to play and download them to your Light Kit!
+
+
+- <a href="sampleGames/laserTag.xml" download>Laser Tag</a>
+
+    Control your ship, keep it from getting hit, and defeat your enemy!
+
+    ![](./image/game04.jpg) //TODO: change picture
+
+
+- <a href="sampleGames/jukuBird.xml" download>Juku Bird</a>
+
+    Keep the little bird from hitting the walls!
+
+    ![](./image/game04.jpg) //TODO: change picture

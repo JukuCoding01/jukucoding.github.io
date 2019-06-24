@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating Sprite Run Game! &mdash; JUKUCODING v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="More Games For You!" href="3_Sample_Games.html" />
+    <link rel="prev" title="How to play the game kit" href="1_Introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> JUKUCODING
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Making Music Kit/index.html">Making Music Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LED Light Kit/index.html">LED Light Kit</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Light Game Kit</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_Introduction.html">How to play the game kit</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating Sprite Run Game!</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-1">Step 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2">Step 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3">Step 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4">Step 4</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fun-code">Fun Code!</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lesson-1-build-the-user-interface">Lesson 1. Build the user Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lesson-2-set-the-controls">Lesson 2. Set the Controls</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lesson-3-writing-rules-for-sprite-run">Lesson 3. Writing Rules for <strong>Sprite Run</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lesson-4-scoring-system">Lesson 4. Scoring System</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="3_Sample_Games.html">More Games For You!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_Sample_Games.html#more-effects-for-you">More Effects For You!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_Lesson.html">Lesson</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Robot Kit/index.html">Robot Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">JUKUCODING</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Light Game Kit</a> &raquo;</li>
+        
+      <li>Creating Sprite Run Game!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/JUKUKITS/Light Game Kit/2_Tutorial.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="creating-sprite-run-game">
+<h1>Creating Sprite Run Game!<a class="headerlink" href="#creating-sprite-run-game" title="Permalink to this headline">¶</a></h1>
+<p>Have you ever played Super Mario Run?</p>
+<p>Well, it’s actually easy to build a game that is just like Super Mario Run! Let’s use our Light Game Kit to create a fun game called <strong>Sprite Run</strong>!</p>
+<p><img alt="../../_images/4.gif" src="../../_images/4.gif" /></p>
+<hr class="docutils" />
+<div class="section" id="getting-started">
+<h2>Getting Started!<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>Before we get started on coding, it is important to make sure that we have everything connected.</p>
+<div class="section" id="step-1">
+<h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
+<p>Make sure you have downloaded our software and driver on your computer. If you haven’t, you can download them here:
+<a href="http://microcn.org/" target="_blank">JUKU Download</a></p>
+<p>After you have successfully downloaded JUKU app on your computer, it’s time to assemble the kit!</p>
+</div>
+<div class="section" id="step-2">
+<h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
+<p>Plug the USB cord into QUEEN module, and connect it to your computer.</p>
+<p><img alt="../../_images/QUEEN21.gif" src="../../_images/QUEEN21.gif" /></p>
+</div>
+<div class="section" id="step-3">
+<h3>Step 3<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
+<p>Connect the light board to the <strong>right</strong> of the QUEEN module, as shown below.</p>
+<p><img alt="../../_images/game04.jpg" src="../../_images/game04.jpg" /> //TODO: change picture</p>
+</div>
+<div class="section" id="step-4">
+<h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
+<p>Conenct the joystick to the <strong>left</strong> of the QUEEN module, as shown below.
+<img alt="../../_images/game04.jpg" src="../../_images/game04.jpg" /> //TODO: change picture</p>
+<p><strong>Now that we have assembled our kit, let’s get to making the game!</strong></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="fun-code">
+<h2>Fun Code!<a class="headerlink" href="#fun-code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lesson-1-build-the-user-interface">
+<h3>Lesson 1. Build the user Interface<a class="headerlink" href="#lesson-1-build-the-user-interface" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="step-1-create-our-sprite">
+<h4>Step 1: Create our Sprite<a class="headerlink" href="#step-1-create-our-sprite" title="Permalink to this headline">¶</a></h4>
+<p>Our sprite will be jumping up and down, and it doesn’t have a body yet, so we need to draw its body on the board.</p>
+<p><img alt="../../_images/lesson1_step1.jpg" src="../../_images/lesson1_step1.jpg" /></p>
+</div>
+<div class="section" id="step-2-create-the-roads">
+<h4>Step 2: Create the Roads<a class="headerlink" href="#step-2-create-the-roads" title="Permalink to this headline">¶</a></h4>
+<p>We also need something that our sprite will jump on, otherwise it will float in the air!</p>
+<p><img alt="../../_images/lesson1_step2.jpg" src="../../_images/lesson1_step2.jpg" /></p>
+</div>
+<div class="section" id="step-3-create-the-setup-of-the-game">
+<h4>Step 3: Create the setup of the game<a class="headerlink" href="#step-3-create-the-setup-of-the-game" title="Permalink to this headline">¶</a></h4>
+<p>At the beginning of the game, we want to set the score to 0, otherwise it wouldn’t be fair! We also want to put our sprite and the roads to a certain position, so that they will not be running around!</p>
+<p><img alt="../../_images/lesson1_step3.jpg" src="../../_images/lesson1_step3.jpg" /></p>
+</div>
+<div class="section" id="step-4-setting-up-the-game">
+<h4>Step 4: Setting up the game<a class="headerlink" href="#step-4-setting-up-the-game" title="Permalink to this headline">¶</a></h4>
+<p>Now that we have created the setup of the game, we will put the function we created in step 3 in the Queen Setup. This way, we are telling the Queen to do what we want the game to do!</p>
+<p><img alt="../../_images/lesson1_step4.jpg" src="../../_images/lesson1_step4.jpg" /></p>
+</div>
+<div class="section" id="step-5-sprite-run-cover-image">
+<h4>Step 5: Sprite Run cover image<a class="headerlink" href="#step-5-sprite-run-cover-image" title="Permalink to this headline">¶</a></h4>
+<p>Remember when you open an app on your phone, you click on its cover image icon? We are creating our own cover image here!</p>
+<p><img alt="../../_images/lesson1_step5.jpg" src="../../_images/lesson1_step5.jpg" /></p>
+</div>
+</div>
+<div class="section" id="lesson-2-set-the-controls">
+<h3>Lesson 2. Set the Controls<a class="headerlink" href="#lesson-2-set-the-controls" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="step-1-creating-spritefly">
+<h4>Step 1: Creating SpriteFly<a class="headerlink" href="#step-1-creating-spritefly" title="Permalink to this headline">¶</a></h4>
+<p>We want to control the sprite to jump up, so let’s create a function that tells the sprite to jump. We name the function SpriteFly.</p>
+<p><img alt="../../_images/lesson2_step1.jpg" src="../../_images/lesson2_step1.jpg" /></p>
+</div>
+<div class="section" id="step-2-when-can-sprite-jump">
+<h4>Step 2: When can sprite jump?<a class="headerlink" href="#step-2-when-can-sprite-jump" title="Permalink to this headline">¶</a></h4>
+<p>In our life experience, can we jump mid-air? No! So it only makes sense that the sprite can jump only when it is standing on the road. We also want the sprite to jump only when we want it to, so we use an if-statement, telling the sprite that it can only jump when it is standing on the road and when we are telling it to jump.</p>
+<p><img alt="../../_images/lesson2_step2.jpg" src="../../_images/lesson2_step2.jpg" /></p>
+</div>
+<div class="section" id="step-3-jump">
+<h4>Step 3: Jump!<a class="headerlink" href="#step-3-jump" title="Permalink to this headline">¶</a></h4>
+<p>When sprite jump, it moves up. We can do this by simply changing its y-coordinates on the light board up!</p>
+<p><img alt="../../_images/lesson2_step3.jpg" src="../../_images/lesson2_step3.jpg" /></p>
+</div>
+<div class="section" id="step-4-telling-the-queen">
+<h4>Step 4: Telling the Queen<a class="headerlink" href="#step-4-telling-the-queen" title="Permalink to this headline">¶</a></h4>
+<p>As we did with the setup of the game, we need to tell the Queen what we want it to do. Therefore, we move the function block to Queen loop.</p>
+<p><img alt="../../_images/lesson2_step4.jpg" src="../../_images/lesson2_step4.jpg" /></p>
+</div>
+<div class="section" id="step-5-falling-down">
+<h4>Step 5: Falling down…<a class="headerlink" href="#step-5-falling-down" title="Permalink to this headline">¶</a></h4>
+<p>After the sprite jumps, it needs to come down to the road, because it can’t stay up forever!</p>
+<p><img alt="../../_images/lesson2_step5.jpg" src="../../_images/lesson2_step5.jpg" /></p>
+</div>
+<div class="section" id="step-6-game-over">
+<h4>Step 6: Game over?<a class="headerlink" href="#step-6-game-over" title="Permalink to this headline">¶</a></h4>
+<p>When the sprite has fallen down, we need to see if it lands on ground or falls between the crack. If it lands in crack, then Game Over!</p>
+<p><img alt="../../_images/lesson2_step6.jpg" src="../../_images/lesson2_step6.jpg" /></p>
+</div>
+<div class="section" id="step-7-setting-intervals">
+<h4>Step 7: Setting intervals<a class="headerlink" href="#step-7-setting-intervals" title="Permalink to this headline">¶</a></h4>
+<p>In our program, we don’t know when someone will move the joystick and tell the sprite to jump. Therefore, we need to check constantly if the sprite has jumped up and needs to fall down.</p>
+<p><img alt="../../_images/lesson2_step7.jpg" src="../../_images/lesson2_step7.jpg" /></p>
+</div>
+</div>
+<div class="section" id="lesson-3-writing-rules-for-sprite-run">
+<h3>Lesson 3. Writing Rules for <strong>Sprite Run</strong><a class="headerlink" href="#lesson-3-writing-rules-for-sprite-run" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="step-1-shifting-the-roads">
+<h4>Step 1: Shifting the roads<a class="headerlink" href="#step-1-shifting-the-roads" title="Permalink to this headline">¶</a></h4>
+<p>Since we only allow the sprite to jump up and down, the road underneath it needs to shift. Here, we shift the road to the left so that we can see the cracks coming!</p>
+<p><img alt="../../_images/lesson3_step1.jpg" src="../../_images/lesson3_step1.jpg" /></p>
+</div>
+<div class="section" id="step-2-generating-new-roads">
+<h4>Step 2: Generating new roads<a class="headerlink" href="#step-2-generating-new-roads" title="Permalink to this headline">¶</a></h4>
+<p>After the one road disappears, another road should appear and take it’s place. Otherwise, no matter how far our sprite can jump, it has nothing to land on!</p>
+<p><img alt="../../_images/lesson3_step2.jpg" src="../../_images/lesson3_step2.jpg" /></p>
+</div>
+<div class="section" id="step-3-setting-intervals">
+<h4>Step 3: Setting intervals<a class="headerlink" href="#step-3-setting-intervals" title="Permalink to this headline">¶</a></h4>
+<p>Same with spriteFall, we don’t know when the roads run out, and we need to shift the roads constantly, so we need to constantly move the road and generate new roads.</p>
+<p><img alt="../../_images/lesson3_step3.jpg" src="../../_images/lesson3_step3.jpg" /></p>
+</div>
+</div>
+<div class="section" id="lesson-4-scoring-system">
+<h3>Lesson 4. Scoring System<a class="headerlink" href="#lesson-4-scoring-system" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="step-1-increase-the-scores">
+<h4>Step 1: Increase the scores!<a class="headerlink" href="#step-1-increase-the-scores" title="Permalink to this headline">¶</a></h4>
+<p>Whenever the sprite jumps over a crack, the score should increases by 1. Here, we’ve helped you and calculated the conditions under which the sprite jumps over a crack successfully!</p>
+<p><img alt="../../_images/lesson4_step1.jpg" src="../../_images/lesson4_step1.jpg" /></p>
+</div>
+<div class="section" id="step-2-setting-intervals">
+<h4>Step 2: Setting intervals<a class="headerlink" href="#step-2-setting-intervals" title="Permalink to this headline">¶</a></h4>
+<p>You should have guessed by now, we need to check constantly if the sprite has jumped over the crack successfully and update the score if necessary.</p>
+<p><img alt="../../_images/lesson4_step2.jpg" src="../../_images/lesson4_step2.jpg" /></p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="3_Sample_Games.html" class="btn btn-neutral float-right" title="More Games For You!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="1_Introduction.html" class="btn btn-neutral float-left" title="How to play the game kit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, by office depot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

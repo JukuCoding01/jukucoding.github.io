@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lesson &mdash; JUKUCODING v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Light Game Kit" href="../Light Game Kit/index.html" />
+    <link rel="prev" title="More Light Effects For You!" href="3_Sample_Games.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> JUKUCODING
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Making Music Kit/index.html">Making Music Kit</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">LED Light Kit</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_Introduction.html">How to play the Lightshow kit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_Tutorial.html">Learning to Customize Your LED Lights!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_Sample_Games.html">More Light Effects For You!</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lesson</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lesson-1">Lesson 1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-basic-setup">Step 1: Basic Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-light-up-a-bulb-1">Step 2: Light up a bulb 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-light-up-a-bulb-2">Step 3: Light up a bulb 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4-light-up-a-bulb-3">Step 4: Light up a bulb 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-5-change-color">Step 5: Change color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-6-change-color-2">Step 6: Change color 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-7-change-position">Step 7: Change position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-8-change-position-2">Step 8: Change position 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-9-light-up-two-bulbs-1">Step 9: Light up two bulbs 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-10-light-up-two-bulbs-2">Step 10:  Light up two bulbs 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-11-delete-the-last-block">Step 11: Delete the Last Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-12-delete-the-middle-block">Step 12: Delete the Middle Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-13-light-up-a-bulb-using-rgb">Step 13: Light up a bulb using RGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-14-change-rgb-numbers-1">Step 14: Change RGB numbers 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-15-change-rgb-numbers-2">Step 15: Change RGB numbers 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-16-change-rgb-numbers-2">Step 16: Change RGB numbers 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-17-light-up-two-red-light-bulbs">Step 17: Light up two red light bulbs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#lesson-2">Lesson 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-random-red-1">Step 1: Random Red 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-random-red-2">Step 2: Random Red 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-random-red-3">Step 3: Random Red 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4-random-green-1">Step 4: Random Green 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-5-random-green-2">Step 5: Random Green 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-6-random-blue">Step 6: Random Blue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-7-iterate-1">Step 7: Iterate 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-8-iterate-2">Step 8: Iterate 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-9-iterate-3">Step 9: Iterate 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-10-iterate-4">Step 10: Iterate 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-11-lighting-up-the-entire-light-strip">Step 11: Lighting up the entire light strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-12-dim-1">Step 12: Dim 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-13-dim-2">Step 13: Dim 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-14-dim-3">Step 14: Dim 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-15-dim-4">Step 15: Dim 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Light Game Kit/index.html">Light Game Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Robot Kit/index.html">Robot Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">JUKUCODING</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">LED Light Kit</a> &raquo;</li>
+        
+      <li>Lesson</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/JUKUKITS/LED Light Kit/4_Lesson.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lesson">
+<h1>Lesson<a class="headerlink" href="#lesson" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lesson-1">
+<h2>Lesson 1<a class="headerlink" href="#lesson-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1-basic-setup">
+<h3>Step 1: Basic Setup<a class="headerlink" href="#step-1-basic-setup" title="Permalink to this headline">¶</a></h3>
+<p>Right for output.</p>
+</div>
+<div class="section" id="step-2-light-up-a-bulb-1">
+<h3>Step 2: Light up a bulb 1<a class="headerlink" href="#step-2-light-up-a-bulb-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag “set LIGHT BAR length” into QUEEN Setup.</p>
+<p><img alt="../../_images/l1s2.jpg" src="../../_images/l1s2.jpg" /></p>
+</div>
+<div class="section" id="step-3-light-up-a-bulb-2">
+<h3>Step 3: Light up a bulb 2<a class="headerlink" href="#step-3-light-up-a-bulb-2" title="Permalink to this headline">¶</a></h3>
+<p>Drag the block “set LIGHT BAR color”  to QUEEN Loop.</p>
+<p><img alt="../../_images/l1s3.jpg" src="../../_images/l1s3.jpg" /></p>
+</div>
+<div class="section" id="step-4-light-up-a-bulb-3">
+<h3>Step 4: Light up a bulb 3<a class="headerlink" href="#step-4-light-up-a-bulb-3" title="Permalink to this headline">¶</a></h3>
+<p>Drag the block “set LIGHT BAR show”  under the previous block.</p>
+<p><img alt="../../_images/l1s4.jpg" src="../../_images/l1s4.jpg" /></p>
+</div>
+<div class="section" id="step-5-change-color">
+<h3>Step 5: Change color<a class="headerlink" href="#step-5-change-color" title="Permalink to this headline">¶</a></h3>
+<p>Change the color of the light bulb to blue.</p>
+<p><img alt="../../_images/l1s5.jpg" src="../../_images/l1s5.jpg" /></p>
+</div>
+<div class="section" id="step-6-change-color-2">
+<h3>Step 6: Change color 2<a class="headerlink" href="#step-6-change-color-2" title="Permalink to this headline">¶</a></h3>
+<p>Change the color of the light bulb to a color you want.</p>
+<p><img alt="../../_images/l1s6.jpg" src="../../_images/l1s6.jpg" /></p>
+</div>
+<div class="section" id="step-7-change-position">
+<h3>Step 7: Change position<a class="headerlink" href="#step-7-change-position" title="Permalink to this headline">¶</a></h3>
+<p>Change the number of the “set LIGHT BAR color” block so that a bulb at position 1 lights up.</p>
+<p><img alt="../../_images/l1s7.jpg" src="../../_images/l1s7.jpg" /></p>
+</div>
+<div class="section" id="step-8-change-position-2">
+<h3>Step 8: Change position 2<a class="headerlink" href="#step-8-change-position-2" title="Permalink to this headline">¶</a></h3>
+<p>Try to light up the bulb at position 3.</p>
+<p><img alt="../../_images/l1s8.jpg" src="../../_images/l1s8.jpg" /></p>
+</div>
+<div class="section" id="step-9-light-up-two-bulbs-1">
+<h3>Step 9: Light up two bulbs 1<a class="headerlink" href="#step-9-light-up-two-bulbs-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag another “set LIGHT BAR color” block under the previous one.</p>
+<p><img alt="../../_images/l1s9.jpg" src="../../_images/l1s9.jpg" /></p>
+</div>
+<div class="section" id="step-10-light-up-two-bulbs-2">
+<h3>Step 10:  Light up two bulbs 2<a class="headerlink" href="#step-10-light-up-two-bulbs-2" title="Permalink to this headline">¶</a></h3>
+<p>Change the number of the new “set LIGHT BAR color” block to 2.</p>
+<p><img alt="../../_images/l1s10.jpg" src="../../_images/l1s10.jpg" /></p>
+</div>
+<div class="section" id="step-11-delete-the-last-block">
+<h3>Step 11: Delete the Last Block<a class="headerlink" href="#step-11-delete-the-last-block" title="Permalink to this headline">¶</a></h3>
+<p>Delete the last block so that only the first and second bulbs lights up.</p>
+<p><img alt="../../_images/l1s11.jpg" src="../../_images/l1s11.jpg" /></p>
+</div>
+<div class="section" id="step-12-delete-the-middle-block">
+<h3>Step 12: Delete the Middle Block<a class="headerlink" href="#step-12-delete-the-middle-block" title="Permalink to this headline">¶</a></h3>
+<p>Delete the middle block so that only the first and third bulbs lights up.</p>
+<p><img alt="../../_images/l1s12.jpg" src="../../_images/l1s12.jpg" /></p>
+</div>
+<div class="section" id="step-13-light-up-a-bulb-using-rgb">
+<h3>Step 13: Light up a bulb using RGB<a class="headerlink" href="#step-13-light-up-a-bulb-using-rgb" title="Permalink to this headline">¶</a></h3>
+<p>Use the block that set LIGHT BAR color using RGB.</p>
+<p><img alt="../../_images/l1s13.jpg" src="../../_images/l1s13.jpg" /></p>
+</div>
+<div class="section" id="step-14-change-rgb-numbers-1">
+<h3>Step 14: Change RGB numbers 1<a class="headerlink" href="#step-14-change-rgb-numbers-1" title="Permalink to this headline">¶</a></h3>
+<p>Change G &amp; B number to 0, see what color you get!</p>
+<p><img alt="../../_images/l1s14.jpg" src="../../_images/l1s14.jpg" /></p>
+</div>
+<div class="section" id="step-15-change-rgb-numbers-2">
+<h3>Step 15: Change RGB numbers 2<a class="headerlink" href="#step-15-change-rgb-numbers-2" title="Permalink to this headline">¶</a></h3>
+<p>Change R &amp; G number to 0, see what color you get!</p>
+<p><img alt="../../_images/l1s15.jpg" src="../../_images/l1s15.jpg" /></p>
+</div>
+<div class="section" id="step-16-change-rgb-numbers-2">
+<h3>Step 16: Change RGB numbers 2<a class="headerlink" href="#step-16-change-rgb-numbers-2" title="Permalink to this headline">¶</a></h3>
+<p>Change R &amp; B number to 0, see what color you get!</p>
+<p><img alt="../../_images/l1s16.jpg" src="../../_images/l1s16.jpg" /></p>
+</div>
+<div class="section" id="step-17-light-up-two-red-light-bulbs">
+<h3>Step 17: Light up two red light bulbs<a class="headerlink" href="#step-17-light-up-two-red-light-bulbs" title="Permalink to this headline">¶</a></h3>
+<p>Light up two light bulbs to red using different blocks.</p>
+<p><img alt="../../_images/l1s17.jpg" src="../../_images/l1s17.jpg" /></p>
+</div>
+</div>
+<div class="section" id="lesson-2">
+<h2>Lesson 2<a class="headerlink" href="#lesson-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1-random-red-1">
+<h3>Step 1: Random Red 1<a class="headerlink" href="#step-1-random-red-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag “set item to 0” block to the top and rename “item” to “r”.</p>
+<p><img alt="../../_images/l2s1.jpg" src="../../_images/l2s1.jpg" /></p>
+</div>
+<div class="section" id="step-2-random-red-2">
+<h3>Step 2: Random Red 2<a class="headerlink" href="#step-2-random-red-2" title="Permalink to this headline">¶</a></h3>
+<p>Drag “random number integer” block to the right of the previous block, replacing the “0” block.</p>
+<p><img alt="../../_images/l2s2.jpg" src="../../_images/l2s2.jpg" /></p>
+</div>
+<div class="section" id="step-3-random-red-3">
+<h3>Step 3: Random Red 3<a class="headerlink" href="#step-3-random-red-3" title="Permalink to this headline">¶</a></h3>
+<p>Replace the number for R in the “set LIGHT BAR color” block with “item” block, and change “item” to “r”.</p>
+<p><img alt="../../_images/l2s3.jpg" src="../../_images/l2s3.jpg" /></p>
+</div>
+<div class="section" id="step-4-random-green-1">
+<h3>Step 4: Random Green 1<a class="headerlink" href="#step-4-random-green-1" title="Permalink to this headline">¶</a></h3>
+<p>Repeat this for green. Drag “set item to 0” block to the top and rename “item” to “g”. Use a random integer to replace number “0”.</p>
+<p><img alt="../../_images/l2s4.jpg" src="../../_images/l2s4.jpg" /></p>
+</div>
+<div class="section" id="step-5-random-green-2">
+<h3>Step 5: Random Green 2<a class="headerlink" href="#step-5-random-green-2" title="Permalink to this headline">¶</a></h3>
+<p>Replace the number for G in the “set LIGHT BAR color” block with “item” block, and change “item” to “g”.</p>
+<p><img alt="../../_images/l2s5.jpg" src="../../_images/l2s5.jpg" /></p>
+</div>
+<div class="section" id="step-6-random-blue">
+<h3>Step 6: Random Blue<a class="headerlink" href="#step-6-random-blue" title="Permalink to this headline">¶</a></h3>
+<p>Try to repeat the same process we did to red and green to the color blue.</p>
+<p><img alt="../../_images/l2s6.jpg" src="../../_images/l2s6.jpg" /></p>
+</div>
+<div class="section" id="step-7-iterate-1">
+<h3>Step 7: Iterate 1<a class="headerlink" href="#step-7-iterate-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag “count with i with” block out and place it on the very top.</p>
+<p><img alt="../../_images/l2s7.jpg" src="../../_images/l2s7.jpg" /></p>
+</div>
+<div class="section" id="step-8-iterate-2">
+<h3>Step 8: Iterate 2<a class="headerlink" href="#step-8-iterate-2" title="Permalink to this headline">¶</a></h3>
+<p>Change the number of the “count” block to “from 0 to 29”</p>
+<p><img alt="../../_images/l2s8.jpg" src="../../_images/l2s8.jpg" /></p>
+</div>
+<div class="section" id="step-9-iterate-3">
+<h3>Step 9: Iterate 3<a class="headerlink" href="#step-9-iterate-3" title="Permalink to this headline">¶</a></h3>
+<p>Drag everything below the “count” block inside the block.</p>
+<p><img alt="../../_images/l2s9.jpg" src="../../_images/l2s9.jpg" /></p>
+</div>
+<div class="section" id="step-10-iterate-4">
+<h3>Step 10: Iterate 4<a class="headerlink" href="#step-10-iterate-4" title="Permalink to this headline">¶</a></h3>
+<p>Change the number in the “set LIGHT BAR color” to variable “i”</p>
+<p><img alt="../../_images/l2s10.jpg" src="../../_images/l2s10.jpg" /></p>
+</div>
+<div class="section" id="step-11-lighting-up-the-entire-light-strip">
+<h3>Step 11: Lighting up the entire light strip<a class="headerlink" href="#step-11-lighting-up-the-entire-light-strip" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “set LIGHT BAR clean” block out of the “count” block and put it at the end of the program.</p>
+<p><img alt="../../_images/l2s11.jpg" src="../../_images/l2s11.jpg" /></p>
+</div>
+<div class="section" id="step-12-dim-1">
+<h3>Step 12: Dim 1<a class="headerlink" href="#step-12-dim-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag “count with i with” block out and place it under the first “count” block.</p>
+<p><img alt="../../_images/l2s12.jpg" src="../../_images/l2s12.jpg" /></p>
+</div>
+<div class="section" id="step-13-dim-2">
+<h3>Step 13: Dim 2<a class="headerlink" href="#step-13-dim-2" title="Permalink to this headline">¶</a></h3>
+<p>Change the number of the “count” block to “from 29 to 0 by -1”.</p>
+<p><img alt="../../_images/l2s13.jpg" src="../../_images/l2s13.jpg" /></p>
+</div>
+<div class="section" id="step-14-dim-3">
+<h3>Step 14: Dim 3<a class="headerlink" href="#step-14-dim-3" title="Permalink to this headline">¶</a></h3>
+<p>Drag a “set LIGHT BAR color” block and put it in the second “count” block.</p>
+<p><img alt="../../_images/l2s14.jpg" src="../../_images/l2s14.jpg" /></p>
+</div>
+<div class="section" id="step-15-dim-4">
+<h3>Step 15: Dim 4<a class="headerlink" href="#step-15-dim-4" title="Permalink to this headline">¶</a></h3>
+<p>Set the color of to black (i.e. no light), and change the position parameter to “i”</p>
+<p><img alt="../../_images/l2s15.jpg" src="../../_images/l2s15.jpg" /></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Light Game Kit/index.html" class="btn btn-neutral float-right" title="Light Game Kit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="3_Sample_Games.html" class="btn btn-neutral float-left" title="More Light Effects For You!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, by office depot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

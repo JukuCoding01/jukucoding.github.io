@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lesson &mdash; JUKUCODING v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Robot Kit" href="../Robot Kit/index.html" />
+    <link rel="prev" title="More Games For You!" href="3_Sample_Games.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> JUKUCODING
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Making Music Kit/index.html">Making Music Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LED Light Kit/index.html">LED Light Kit</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Light Game Kit</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_Introduction.html">How to play the game kit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_Tutorial.html">Creating Sprite Run Game!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_Sample_Games.html">More Games For You!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_Sample_Games.html#more-effects-for-you">More Effects For You!</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lesson</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lesson-1">Lesson 1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-basic-setup">Step 1: Basic Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-create-a-square">Step 2: Create a square</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-create-a-square">Step 3: Create a square</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4-rename-the-character">Step 4: Rename the character</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-5-light-up-the-led-board">Step 5: Light up the LED board</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-6-move-up-1">Step 6: Move Up 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-7-move-up-2">Step 7: Move Up 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-8-move-up-3">Step 8: Move Up 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-9-move-up-4">Step 9: Move Up 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-10-keep-the-square-inside-led-board">Step 10: Keep the square inside LED board</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-11-move-down-1">Step 11: Move down 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-12-move-down-2">Step 12: Move down 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-13-move-down-3">Step 13: Move down 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-14-move-left">Step 14: Move left</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-15-move-right">Step 15: Move right</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#lesson-2">Lesson 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prelude">Prelude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-create-a-center-square">Step 1: Create a center square</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-rename-the-new-square">Step 2: Rename the new square</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-another-if-condition">Step 3: Another If condition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-4-collision">Step 4: Collision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-5-reset-the-game">Step 5: Reset the game</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-6-reset-the-game-2">Step 6: Reset the game 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-7-count-scores-1">Step 7: Count Scores 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-8-count-scores-2">Step 8: Count Scores 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-9-count-scores-3">Step 9: Count Scores 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-10-counting-scores-4">Step 10: Counting Scores 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-11-show-scores">Step 11: Show Scores</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-12-restart">Step 12: Restart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-13-counting-scores-1">Step 13: Counting Scores 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-14-counting-scores-2">Step 14: Counting Scores 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Robot Kit/index.html">Robot Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">JUKUCODING</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Light Game Kit</a> &raquo;</li>
+        
+      <li>Lesson</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/JUKUKITS/Light Game Kit/4_Lesson.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lesson">
+<h1>Lesson<a class="headerlink" href="#lesson" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lesson-1">
+<h2>Lesson 1<a class="headerlink" href="#lesson-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1-basic-setup">
+<h3>Step 1: Basic Setup<a class="headerlink" href="#step-1-basic-setup" title="Permalink to this headline">¶</a></h3>
+<p>Left for input, right for output.</p>
+</div>
+<div class="section" id="step-2-create-a-square">
+<h3>Step 2: Create a square<a class="headerlink" href="#step-2-create-a-square" title="Permalink to this headline">¶</a></h3>
+<p>Draw a blue square at the bottom left corner, a shown in the demo.</p>
+<p><img alt="../../_images/l1s21.jpg" src="../../_images/l1s21.jpg" /></p>
+</div>
+<div class="section" id="step-3-create-a-square">
+<h3>Step 3: Create a square<a class="headerlink" href="#step-3-create-a-square" title="Permalink to this headline">¶</a></h3>
+<p>Try draw a yellow square at the same position.</p>
+<p><img alt="../../_images/l1s31.jpg" src="../../_images/l1s31.jpg" /></p>
+</div>
+<div class="section" id="step-4-rename-the-character">
+<h3>Step 4: Rename the character<a class="headerlink" href="#step-4-rename-the-character" title="Permalink to this headline">¶</a></h3>
+<p>Change the name from “character” to “square”.</p>
+<p><img alt="../../_images/l1s41.jpg" src="../../_images/l1s41.jpg" /></p>
+</div>
+<div class="section" id="step-5-light-up-the-led-board">
+<h3>Step 5: Light up the LED board<a class="headerlink" href="#step-5-light-up-the-led-board" title="Permalink to this headline">¶</a></h3>
+<p>Drag the block “start game with 1 GRAPHIC(s)”  into the QUEEN Loop.</p>
+<p><img alt="../../_images/l1s51.jpg" src="../../_images/l1s51.jpg" /></p>
+</div>
+<div class="section" id="step-6-move-up-1">
+<h3>Step 6: Move Up 1<a class="headerlink" href="#step-6-move-up-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag “if-do” block under the “start game with 1 GRAPHIC” block.</p>
+<p><img alt="../../_images/l1s61.jpg" src="../../_images/l1s61.jpg" /></p>
+</div>
+<div class="section" id="step-7-move-up-2">
+<h3>Step 7: Move Up 2<a class="headerlink" href="#step-7-move-up-2" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “Get JOYSTICK (direction) from IN2” block and put it after “if” block.</p>
+<p><img alt="../../_images/l1s71.jpg" src="../../_images/l1s71.jpg" /></p>
+</div>
+<div class="section" id="step-8-move-up-3">
+<h3>Step 8: Move Up 3<a class="headerlink" href="#step-8-move-up-3" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “(direction) shift character x by step n” block and put it inside the “if-do” block.</p>
+<p><img alt="../../_images/l1s81.jpg" src="../../_images/l1s81.jpg" /></p>
+</div>
+<div class="section" id="step-9-move-up-4">
+<h3>Step 9: Move Up 4<a class="headerlink" href="#step-9-move-up-4" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “wait n milliseconds” block and put it under the previous block and change the number to 200.</p>
+<p><img alt="../../_images/l1s91.jpg" src="../../_images/l1s91.jpg" /></p>
+</div>
+<div class="section" id="step-10-keep-the-square-inside-led-board">
+<h3>Step 10: Keep the square inside LED board<a class="headerlink" href="#step-10-keep-the-square-inside-led-board" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “keep character within GRAPHIC” block and put it under the “if” block.</p>
+<p><img alt="../../_images/l1s101.jpg" src="../../_images/l1s101.jpg" /></p>
+</div>
+<div class="section" id="step-11-move-down-1">
+<h3>Step 11: Move down 1<a class="headerlink" href="#step-11-move-down-1" title="Permalink to this headline">¶</a></h3>
+<p>Create an “else if” branch under the current “if” block.</p>
+<p><img alt="../../_images/l1s111.jpg" src="../../_images/l1s111.jpg" /></p>
+</div>
+<div class="section" id="step-12-move-down-2">
+<h3>Step 12: Move down 2<a class="headerlink" href="#step-12-move-down-2" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “get JOYSTICK (direction) from IN2”, put it after the “else-if” branch, and get the downward direction from the joystick.</p>
+<p><img alt="../../_images/l1s121.jpg" src="../../_images/l1s121.jpg" /></p>
+</div>
+<div class="section" id="step-13-move-down-3">
+<h3>Step 13: Move down 3<a class="headerlink" href="#step-13-move-down-3" title="Permalink to this headline">¶</a></h3>
+<p>In the else-if branch, make the square move one step down if and wait 200 milliseconds before moving on to the next block.</p>
+<p><img alt="../../_images/l1s131.jpg" src="../../_images/l1s131.jpg" /></p>
+</div>
+<div class="section" id="step-14-move-left">
+<h3>Step 14: Move left<a class="headerlink" href="#step-14-move-left" title="Permalink to this headline">¶</a></h3>
+<p>Repeat the process in previous steps to make the block move left when the joystick is shifted to the left.</p>
+<p><img alt="../../_images/l1s141.jpg" src="../../_images/l1s141.jpg" /></p>
+</div>
+<div class="section" id="step-15-move-right">
+<h3>Step 15: Move right<a class="headerlink" href="#step-15-move-right" title="Permalink to this headline">¶</a></h3>
+<p>Repeat the process in previous steps to make the block move right when the joystick is shifted to the right.</p>
+<p><img alt="../../_images/l1s151.jpg" src="../../_images/l1s151.jpg" /></p>
+</div>
+</div>
+<div class="section" id="lesson-2">
+<h2>Lesson 2<a class="headerlink" href="#lesson-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="prelude">
+<h3>Prelude<a class="headerlink" href="#prelude" title="Permalink to this headline">¶</a></h3>
+<p>Now that we can control the movement of the character, let’s try to build a very simple game.</p>
+</div>
+<div class="section" id="step-1-create-a-center-square">
+<h3>Step 1: Create a center square<a class="headerlink" href="#step-1-create-a-center-square" title="Permalink to this headline">¶</a></h3>
+<p>Draw a red square at the center of the LED board, as shown in the demo.</p>
+<p><img alt="../../_images/l2s16.jpg" src="../../_images/l2s16.jpg" /></p>
+</div>
+<div class="section" id="step-2-rename-the-new-square">
+<h3>Step 2: Rename the new square<a class="headerlink" href="#step-2-rename-the-new-square" title="Permalink to this headline">¶</a></h3>
+<p>Change the name of the newly created red square’s name to “noTouch”.</p>
+<p><img alt="../../_images/l2s21.jpg" src="../../_images/l2s21.jpg" /></p>
+</div>
+<div class="section" id="step-3-another-if-condition">
+<h3>Step 3: Another If condition<a class="headerlink" href="#step-3-another-if-condition" title="Permalink to this headline">¶</a></h3>
+<p>Put another “if-do” block at the bottom of the QUEEN loop.</p>
+<p><img alt="../../_images/l2s31.jpg" src="../../_images/l2s31.jpg" /></p>
+</div>
+<div class="section" id="step-4-collision">
+<h3>Step 4: Collision<a class="headerlink" href="#step-4-collision" title="Permalink to this headline">¶</a></h3>
+<p>Put the “(character) collide with (character)” block after the “if” block.</p>
+<p><img alt="../../_images/l2s41.jpg" src="../../_images/l2s41.jpg" /></p>
+</div>
+<div class="section" id="step-5-reset-the-game">
+<h3>Step 5: Reset the game<a class="headerlink" href="#step-5-reset-the-game" title="Permalink to this headline">¶</a></h3>
+<p>Drag the blocks that set the position of the character into the “if” block.</p>
+<p><img alt="../../_images/l2s51.jpg" src="../../_images/l2s51.jpg" /></p>
+</div>
+<div class="section" id="step-6-reset-the-game-2">
+<h3>Step 6: Reset the game 2<a class="headerlink" href="#step-6-reset-the-game-2" title="Permalink to this headline">¶</a></h3>
+<p>Can you try to reset the blue block to the top left corner?</p>
+<p><img alt="../../_images/l2s61.jpg" src="../../_images/l2s61.jpg" /></p>
+</div>
+<div class="section" id="step-7-count-scores-1">
+<h3>Step 7: Count Scores 1<a class="headerlink" href="#step-7-count-scores-1" title="Permalink to this headline">¶</a></h3>
+<p>Drag “set score” block to Queen setup.</p>
+<p><img alt="../../_images/l2s71.jpg" src="../../_images/l2s71.jpg" /></p>
+</div>
+<div class="section" id="step-8-count-scores-2">
+<h3>Step 8: Count Scores 2<a class="headerlink" href="#step-8-count-scores-2" title="Permalink to this headline">¶</a></h3>
+<p>Change function name of the “do (function) per n milliseconds” to “countScores”.</p>
+<p><img alt="../../_images/l2s81.jpg" src="../../_images/l2s81.jpg" /></p>
+</div>
+<div class="section" id="step-9-count-scores-3">
+<h3>Step 9: Count Scores 3<a class="headerlink" href="#step-9-count-scores-3" title="Permalink to this headline">¶</a></h3>
+<p>Change the time of the “do countScores per n milliseconds” block to 1000</p>
+<p><img alt="../../_images/l2s91.jpg" src="../../_images/l2s91.jpg" /></p>
+</div>
+<div class="section" id="step-10-counting-scores-4">
+<h3>Step 10: Counting Scores 4<a class="headerlink" href="#step-10-counting-scores-4" title="Permalink to this headline">¶</a></h3>
+<p>Drag “change score by 1” block in the “countScores” function block.</p>
+<p><img alt="../../_images/l2s101.jpg" src="../../_images/l2s101.jpg" /></p>
+</div>
+<div class="section" id="step-11-show-scores">
+<h3>Step 11: Show Scores<a class="headerlink" href="#step-11-show-scores" title="Permalink to this headline">¶</a></h3>
+<p>Drag the “Show score with GRAPHIC” block and put it after we change the coordinates of the blue square.</p>
+<p><img alt="../../_images/l2s111.jpg" src="../../_images/l2s111.jpg" /></p>
+</div>
+<div class="section" id="step-12-restart">
+<h3>Step 12: Restart<a class="headerlink" href="#step-12-restart" title="Permalink to this headline">¶</a></h3>
+<p>Drag another “set score” block and put it after we show the score.</p>
+<p><img alt="../../_images/l2s121.jpg" src="../../_images/l2s121.jpg" /></p>
+</div>
+<div class="section" id="step-13-counting-scores-1">
+<h3>Step 13: Counting Scores 1<a class="headerlink" href="#step-13-counting-scores-1" title="Permalink to this headline">¶</a></h3>
+<p>Can you change one number so that the scores increases by 2 every 1000 milliseconds?</p>
+<p><img alt="../../_images/l2s131.jpg" src="../../_images/l2s131.jpg" /></p>
+</div>
+<div class="section" id="step-14-counting-scores-2">
+<h3>Step 14: Counting Scores 2<a class="headerlink" href="#step-14-counting-scores-2" title="Permalink to this headline">¶</a></h3>
+<p>Can you change one number so that the scores increases by 1 every 2 seconds? (1 second = 1000 millisecond)</p>
+<p><img alt="../../_images/l2s141.jpg" src="../../_images/l2s141.jpg" /></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Robot Kit/index.html" class="btn btn-neutral float-right" title="Robot Kit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="3_Sample_Games.html" class="btn btn-neutral float-left" title="More Games For You!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, by office depot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
